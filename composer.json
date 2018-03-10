@@ -1,0 +1,32 @@
+{
+    "name": "timerlau/errcode",
+    "type": "package",
+    "description": "统一错误代码 For Laravel",
+    "keywords": ["统一错误代码", "laravel", "errcode error code"],
+    "homepage": "https://github.com/timerlau/errcode.git",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "songmw",
+            "email": "imphp@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Timerlau\\Errcode\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Timerlau\\Errcode\\ErrcodeServiceProvider"
+            ],
+            "aliases": {
+                "Sms": "Timerlau\\Errcode\\Facades\\Errcode"
+            }
+        }
+    }
+}
