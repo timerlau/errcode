@@ -37,6 +37,10 @@ $system = [
     'user_out_of_rate_limit' => [10023, 'User requests out of rate limit', '用户请求频次超过上限'],
     'unknow_error'          => [10024, 'Unknow Error', '未知错误'],
     'unknow_errcode'          => [10025, 'Unknow ErrorCode', '未知错误码'],
+    'sign_error'            => [10026, 'Sign Error', '签名错误'],
+    'sign_lapse'            => [10027, 'Sign Lapse', '签名失效'],
+    'sign_repeat'           => [10028, 'Sign Repeat', '签名重复'],
+
 ];
 
 /**

@@ -32,4 +32,9 @@ use Errcode;
 
 Errcode::success();     // 获取错误码信息
 Errcode::success(true);     // 获取错误码代码
+
+Errcode::api_not_found();     // 获取错误码信息
+Errcode::api_not_found(true);     // 获取错误码代码
+
+Errcode::show(); // 可以查看所有错误代码
 ````

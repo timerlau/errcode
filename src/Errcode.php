@@ -17,6 +17,16 @@ class Errcode
         $this->config = config('errcode');
     }
 
+    public function show()
+    {
+        echo 'v1.0版本 先凑合看 :)<hr>';
+        $format_str = '错误码：%s | 错误描述：%s | 错误详情：%s';
+        foreach ($this->config as $config) {
+            echo sprintf($format_str, $config[0], $config[1], $config[2]) . '<br>';
+        }
+        die;
+    }
+
     public function get($name)
     {
         return isset($this->config[$name]) ? 
