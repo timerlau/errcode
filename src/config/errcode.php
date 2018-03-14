@@ -40,7 +40,8 @@ $system = [
     'sign_error'            => [10026, 'Sign Error', '签名错误'],
     'sign_lapse'            => [10027, 'Sign Lapse', '签名失效'],
     'sign_repeat'           => [10028, 'Sign Repeat', '签名重复'],
-
+    'version_error'           => [10029, 'Version Error', '版本号错误'],
+    'invalid_status'           => [10030, 'Invalid status', '无效状态码'],
 ];
 
 /**
@@ -48,10 +49,24 @@ $system = [
  */
 $service = [
     
-    // 通用服务 00
-    
-    // 用户服务 01
-    
+    // 通用服务 00 预留01
+    'uid_is_null' => [20001, 'Uid parameter is null', 'Uid参数为空'],
+    'user_not_exists' => [20002, 'User does not exists', '用户不存在'],
+    'unsupported_image_type' => [20003, 'Unsupported image type, only suport JPG, GIF, PNG', '不支持的图片类型，仅仅支持JPG、GIF、PNG'],
+    'image_size_too_large' => [20004, 'Image size too large', '图片太大'],
+    'content_is_null' => [20005, 'Content is null', '内容为空'],
+    'text_too_long' => [20006, 'Text too long', '输入文字太长'],
+    'account_ip_illgal' => [20007, 'Account or ip or app is illgal, can not continue', '账号、IP或应用非法，暂时无法完成此操作'],
+    'out_of_limit' => [20008, 'Out of limit', '发布内容过于频繁'],
+    'repeat_content' => [20009, 'Repeat content', '提交相似的信息'],
+    'your_ip_unruly' => [20010, "Your ip's behave in a comic boisterous or unruly manner", '此IP地址上的行为异常'],
+    'test_and_verify' => [20011, 'Test and verify', '需要验证码'],
+
+    // 用户服务 02
+    'auth_faild' => [20201, 'Auth faild', '认证失败'],
+    'username_or_password_error' => [20202, 'Username or password error', '用户名或密码不正确'],
+    'auth_out_of_rate_limit' => [20203, 'Username and pwd auth out of rate limit', '用户名密码认证超过请求限制'],
+
     // 短信服务 07
     'invalid_mobile' => [20701, 'Invalid mobile', '非法手机号'],
     'mobile_count_over_limit' => [20702, 'Mobile count over limit', '手机号码数量超过限制'],
