@@ -48,12 +48,14 @@ $system = [
  */
 $service = [
     
-    // 通用服务   00
+    // 通用服务 00
     
     // 用户服务 01
-
+    
     // 短信服务 07
     'invalid_mobile' => [20701, 'Invalid mobile', '非法手机号'],
+    'mobile_count_over_limit' => [20702, 'Mobile count over limit', '手机号码数量超过限制'],
+    'business_limit_control' => [20703, 'Business limit control', '业务限流'],
 
 ];
 
